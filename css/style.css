@@ -4,6 +4,7 @@ a {
 
 body {
     height: 100vh !important;
+    /* position: relative; */
 }
 
 button {
@@ -104,8 +105,6 @@ header > button {
 
 
 .home-about-container {
-    position: absolute;
-    top: 100%;
     margin: 5rem 8rem;
     order: 2;
 }
@@ -157,11 +156,28 @@ header > button {
 }
 
 
+.home-gallery-container {
+    margin: 2rem 2rem;
+}
+
+.hg-heading h5 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.hg-heading h3 {
+    font-family: 'Gambetta', serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
 /* Footer */
 .footer-container {
-    /* margin-top: 100vh; */
-    /* position: relative;
-    top: 100%; */
     padding: 1rem 2.5rem;
 }
 
@@ -212,6 +228,7 @@ header > button {
         font-family: 'Gambetta', serif;
         font-size: 30px;
         letter-spacing: 1px;
+        padding: 0;
     }
 
     .navbar-nav {
@@ -223,9 +240,7 @@ header > button {
     }
 
     .home-about-container {
-        position: absolute;
-        top: 100%;
-        margin: 2rem 2rem;
+        margin: 1rem 1.5rem;
     }
 
     .home-abt-body-left {
@@ -235,4 +250,42 @@ header > button {
     .home-abt-body-right {
         width: 100%;
     }
+
+    .home-abt-body-right .right-head {
+        font-size: 14px;
+        letter-spacing: 8px;
+        margin-bottom: 1.5rem;
+        font-weight: 400;
+    }
+    
+    .home-abt-body-right .right-title {
+        font-family: 'Gambetta', serif;
+        font-size: 33px;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+    
+    .home-abt-body-right .right-body {
+        color: #777777;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    
+    .home-abt-body-right a {
+        width: 60%;
+    }
+    
+    .home-abt-body-right button {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-gallery-container {
+        margin: 2rem 1.5rem;
+    }
+
+    
 }

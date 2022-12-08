@@ -12,7 +12,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/gallery-style.css">
 
     <!-- Fonts -->
     <link href="https://api.fontshare.com/v2/css?f[]=gambetta@400,300,600,500,700&display=swap" rel="stylesheet">
@@ -113,6 +113,40 @@
             text-transform: uppercase;
             font-size: 16px;
             letter-spacing: 7px;
+        }
+
+
+        /* Styling for Gallery */
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Change Column Count to change Columns in the Gallery */
+        #app {
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 3;
+            -webkit-column-gap: 15px;
+            -moz-column-gap: 15px;
+            column-gap: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            #app {
+                column-gap: 5px;
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #app {
+                column-gap: 5px;
+            }
+
+            #app img {
+                margin-bottom: 5px;
+            }
         }
 
 
@@ -288,29 +322,6 @@
         </div>
     </div>
 
-    <!-- Homepage About Section -->
-    <section class="home-about-container">
-        <div class="d-flex flex-lg-row flex-column">
-            <div class="home-abt-body-left">
-                <img src="img/pexels-lucas-decrock-1253664.jpg" alt="">
-            </div>
-            <div class="home-abt-body-right d-flex flex-column justify-content-center">
-                <h5 class="right-head">
-                    ABOUT ME
-
-                </h5>
-                <h3 class="right-title">
-                    Hi, I'm Laura Lewis. A Portrait Photographer based in New York.
-                </h3>
-                <h5 class="right-body">
-                    Add description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-                </h5>
-                <a href="about.html"><button class="btn btn-dark">Contact Me</button></a>
-            </div>
-        </div>
-    </section>
-
-
     <!-- Carousel -->
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -348,6 +359,63 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    <!-- Homepage About Section -->
+    <section class="home-about-container">
+        <div class="d-flex flex-lg-row flex-column">
+            <div class="home-abt-body-left">
+                <img src="img/pexels-lucas-decrock-1253664.jpg" alt="">
+            </div>
+            <div class="home-abt-body-right d-flex flex-column justify-content-center">
+                <h5 class="right-head">
+                    ABOUT ME
+
+                </h5>
+                <h3 class="right-title">
+                    Hi, I'm Ritu Ahuja. A Portrait Photographer based in North India.
+                </h3>
+                <h5 class="right-body">
+                    Add description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </h5>
+                <a href="about.html"><button class="btn btn-dark">Contact Me</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section for Homepage -->
+    <section class="home-gallery-container">
+        <div class="hg-heading d-flex justify-content-center align-items-center flex-column">
+            <h5>
+                Lastest Work
+            </h5>
+            <h3>
+                Gallery
+            </h3>
+        </div>
+        <div class="hg-body">
+            <div id="app">
+                <img src="img/aakash-mally-mGYUvtvu5Xw-unsplash.jpg" alt="" class="workCls">
+                <img src="img/aatur-harsh--7vtLNkRMCA-unsplash.jpg" alt="" class="workCls">
+                <img src="img/abhas-mishra-BD3qGeorAFY-unsplash.jpg" alt="" class="workCls">
+                <img src="img/abhinav-chadha-sCkjk3D5FW8-unsplash.jpg" alt="" class="workCls">
+                <img src="img/aditya-prakash-rJcakYQpxkw-unsplash.jpg" alt="" class="workCls">
+                <img src="img/aditya-siva-3P1G67zNyCI-unsplash.jpg" alt="" class="workCls">
+                <img src="img/alexandre-chambon-iRON0g6iO0k-unsplash.jpg" alt="" class="workCls">
+                <img src="img/arushi-saini-1cxSoKGBrfo-unsplash.jpg" alt="" class="workCls">
+                <img src="img/ashes-sitoula--8ZESyFapTk-unsplash.jpg" alt="" class="workCls">
+                <img src="img/brijesh-nirmal-g3Vw2WeV8i8-unsplash.jpg" alt="" class="workCls">
+                <img src="img/brijesh-nirmal-gd77PFzULjE-unsplash.jpg" alt="" class="workCls">
+                <img src="img/brijesh-nirmal-I-abLNlHkfs-unsplash.jpg" alt="" class="workCls">
+                <img src="img/brijesh-nirmal-vSGje_8WDpM-unsplash.jpg" alt="" class="workCls">
+                <img src="img/deva-darshan-u3FLBxxzClI-unsplash.jpg" alt="" class="workCls">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+
+    </section>
 
     <!-- Footer -->
     <footer class="footer-container w-100">
