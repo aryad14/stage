@@ -266,6 +266,12 @@ header>button {
 }
 
 
+/* Video Page */
+.video-container {
+    padding: 0 3rem;
+}
+
+
 /* Footer */
 .footer-container {
     padding: 1rem 3rem;
@@ -392,6 +398,11 @@ header>button {
 
     .navbar-brand {
         font-size: 24px;
+    }
+
+    /* Video Page */
+    .video-container {
+        padding: 0 1rem;
     }
 }
 
