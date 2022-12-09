@@ -81,13 +81,13 @@ header {
 }
 
 
-header > button {
+header>button {
     font-size: 28px;
     background-color: transparent;
     border: none;
 }
 
-.offcanvas-header > button {
+.offcanvas-header>button {
     background-color: transparent;
     border: none;
 }
@@ -97,7 +97,7 @@ header > button {
     text-align: center;
 }
 
-.offcanvas-body .offcanvas-nav .nav-item{
+.offcanvas-body .offcanvas-nav .nav-item {
     width: fit-content;
     margin: 0 auto !important;
 }
@@ -109,7 +109,7 @@ header > button {
     order: 2;
 }
 
-.home-about-container > div {
+.home-about-container>div {
     gap: 3rem;
 }
 
@@ -173,6 +173,90 @@ header > button {
     font-size: 45px;
     font-weight: 400;
     margin-bottom: 2rem;
+}
+
+
+/* Homepage Testimonials */
+.testimonials-section {
+    margin: 2rem 5rem;
+    background-color: #000;
+    color: #fff !important;
+    height: 400px;
+    text-align: center;
+}
+
+.testimonials-section .carousel {
+    height: 100%;
+}
+
+.testimonials-section .carousel-inner {
+    height: 100%;
+}
+
+.testimonials-section .carousel-item {
+    height: auto;
+    padding: 7.5rem;
+}
+
+.testimonials-section .carousel-item h3 {
+    font-family: 'Gambetta', serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.testimonials-section .carousel-item h5 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 8px;
+}
+
+
+/* Homepage Services Section */
+.services-home {
+    margin: 4rem 3rem;
+}
+
+.service-inner {
+    width: 100%;
+    text-align: center;
+}
+
+.service-inner .service-head h5 {
+    letter-spacing: 8px;
+    font-size: 16px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    
+}
+
+.service-inner .service-head h3 {
+    font-family: 'Gambetta', serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.service-inner .service-body {
+    padding: 0 6rem;
+}
+
+.service-body .row .col-md-4 h3 {
+    font-family: 'Gambetta', serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.service-body .row .col-md-4 h5 {
+    color: #777777;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -257,14 +341,14 @@ header > button {
         margin-bottom: 1.5rem;
         font-weight: 400;
     }
-    
+
     .home-abt-body-right .right-title {
         font-family: 'Gambetta', serif;
         font-size: 33px;
         font-weight: 400;
         margin-bottom: 1.5rem;
     }
-    
+
     .home-abt-body-right .right-body {
         color: #777777;
         font-weight: 400;
@@ -272,13 +356,28 @@ header > button {
         line-height: 1.6;
         margin-bottom: 1.5rem;
     }
-    
+
     .home-abt-body-right a {
         width: 60%;
     }
-    
+
     .home-abt-body-right button {
         padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-section .carousel-item {
+        height: auto;
+        padding: 6.5rem;
+    }
+
+    .testimonials-section .carousel-item h3 {
+        font-size: 30px;
+    }
+
+    .testimonials-section .carousel-item h5 {
+        font-size: 16px;
     }
 }
 
@@ -287,5 +386,45 @@ header > button {
         margin: 2rem 1.5rem;
     }
 
+
+    .testimonials-section {
+        margin: 2rem 1.5rem;
+        background-color: #000;
+        color: #fff !important;
+        height: 400px;
+        text-align: center;
+    }
+
+
+    .testimonials-section .carousel-item {
+        height: auto;
+        padding: 6rem 3.5rem;
+    }
+
+    .testimonials-section .carousel-item h3 {
+        font-family: 'Gambetta', serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
     
+    .testimonials-section .carousel-item h5 {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 8px;
+    }
+
+    
+
+    .service-inner .service-body {
+        padding: 0 0;
+    }
+
+    .service-inner .service-head h3 {
+        font-size: 30px;
+    }
+
+
+
 }
